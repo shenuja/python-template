@@ -1,0 +1,12 @@
+name: Run main.py
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  config:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run
+        run: python ./main.py
